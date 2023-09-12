@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheck, faCoffee, faPen, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faCheck,faPen, faTrash } from '@fortawesome/free-solid-svg-icons';
 export default function Todo({ todo, toggleComplete, handleDelete, handleEdit,}) {
   const [newTitle, setNewTitle] = React.useState(todo.title);
 
