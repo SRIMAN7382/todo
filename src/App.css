@@ -33,6 +33,7 @@ form input {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  border-radius: 20px;
 }
 .input_container {
   margin-bottom: 20px;
@@ -60,7 +61,7 @@ form input {
 }
 .todo {
   margin-top: 20px;
-  background: white;
+  background: rgb(238, 240, 241);
   padding: 10px 20px;
   border-radius: 5px;
   display: flex;
@@ -103,6 +104,38 @@ form input {
   color: rgb(255, 122, 98);
 }
 @media screen and (max-width: 667px) {
+  .task_container {
+    width: 90%;
+  }
+  .task {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .task_container {
+    width: 90%;
+  }
+  .task {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .task_container {
+    width: 90%;
+  }
+  .task {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .task_container {
+    width: 90%;
+  }
+  .task {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 1281px) {
   .task_container {
     width: 90%;
   }

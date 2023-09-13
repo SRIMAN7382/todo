@@ -1,9 +1,9 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheck,faPen, faTrash } from '@fortawesome/free-solid-svg-icons';
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import EditIcon from "@mui/icons-material/Edit";
+import DeleteIcon from "@mui/icons-material/Delete";
 export default function Todo({ todo, toggleComplete, handleDelete, handleEdit,}) {
   const [newTitle, setNewTitle] = React.useState(todo.title);
-
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -28,16 +28,16 @@ export default function Todo({ todo, toggleComplete, handleDelete, handleEdit,})
           className="button-complete"
           onClick={() => toggleComplete(todo)}
         >
-          <FontAwesomeIcon icon={faCheck} style={{color:"blue"}} />
+          <CheckCircleIcon id="i" />
         </button>
         <button
           className="button-edit"
           onClick={() => handleEdit(todo, newTitle)}
         >
-          <FontAwesomeIcon icon={faPen} />
+          <EditIcon id="i" />
         </button>
         <button className="button-delete" onClick={() => handleDelete(todo.id)}>
-        <FontAwesomeIcon icon={faTrash} />
+          <DeleteIcon id="i" />
         </button>
       </div>
     </div>
